@@ -13,6 +13,7 @@ dist
 dist-ssr
 *.local
 design-rocket-landing/
+push_to_github.bat
 
 # Environment variables
 .env
