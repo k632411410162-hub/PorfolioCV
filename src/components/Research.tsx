@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpenCheck, FileText, AlertCircle, TrendingUp, Sparkles } from 'lucide-react';
+import { AlertCircle, TrendingUp } from 'lucide-react';
 import { researchData } from '../data/portfolioData';
 import { DetailAccordion } from './shared/DetailAccordion';
 import { Divider } from './shared/Divider';
@@ -131,42 +131,6 @@ export const Research: React.FC = () => {
           </div>
         ))}
       </div>
-
-      {/* Verified Document Access */}
-      <div className="mt-10 px-5 sm:px-[42px]">
-        <div className="p-5 rounded-[14px] border border-white/10 bg-[#0E0E0E] text-center">
-          <div className="flex items-center justify-center gap-2 mb-2 text-[#DCFF00]">
-            <Sparkles className="w-4 h-4" />
-            <span className="text-xs uppercase tracking-wider font-bold">
-              Tài liệu xác thực đính kèm
-            </span>
-          </div>
-          <p className="text-xs text-[#83837D] mb-4 max-w-[460px] mx-auto">
-            Hồ sơ học thuật và thông tin cá nhân được trích xuất xác thực từ hồ sơ gốc.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a
-              href="/documents/Nguyen_Quynh_Trang_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 text-sm font-medium text-white transition-colors"
-            >
-              <FileText className="w-4 h-4 text-[#DCFF00]" />
-              <span>Xem tài liệu CV (PDF)</span>
-            </a>
-            <a
-              href="/documents/Nguyen_Quynh_Trang_Portfolio.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 text-sm font-medium text-white transition-colors"
-            >
-              <BookOpenCheck className="w-4 h-4 text-[#DCFF00]" />
-              <span>Xem tài liệu Portfolio tổng hợp (PDF)</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
       <Divider />
     </section>
   );
